@@ -1,18 +1,23 @@
 {
-  "name": "custom-cli",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "bryanulises",
-  "license": "ISC",
-  "dependencies": {
-    "commander": "^8.3.0",
-    "dotenv": "^10.0.0",
-    "inquirer": "^8.2.0",
-    "mongoose": "^6.1.5"
-  }
+    "name": "custom-cli",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "preferGlobal": true,
+    "bin": {
+        "alf": "./src/index.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "bryanulises",
+    "license": "ISC",
+    "dependencies": {
+        "chalk": "^5.0.0",
+        "commander": "^8.3.0",
+        "dotenv": "^10.0.0",
+        "inquirer": "^8.2.0",
+        "mongoose": "^6.1.5"
+    }
 }
